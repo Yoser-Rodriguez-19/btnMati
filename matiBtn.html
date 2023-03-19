@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://web-button.getmati.com/button.js">
+    </script>
+    <mati-button
+        clientid="621d444848f61d001c0c7f6b"
+        flowId="6400cc8fac823e001ca2b70a"
+        metadata='{"userId": "6315829b-f804-4112-bee5-130fa18f60df"}'
+    />
+
+    <script>
+        var params = new URLSearchParams(window.location.search);
+
+        var userId = params.get('userId');
+        var flowId = params.get('flowId');
+        document.getElementById("userId").innerHTML = userId;
+        document.getElementById("flowId").innerHTML = flowId;
+    </script>
+</body>
+</html>
